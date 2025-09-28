@@ -1,0 +1,26 @@
+  .image-side,
+    .login-side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .img{
+        min-width: 200px;
+        max-width: 400px;
+      }
+
+    @media (max-width: 768px) {
+      .image-side {
+        margin-top: 30px;
+        max-height: 30%;
+      }
+      .login-side {
+        max-height: 70%;
+      }
+
+      .img{
+        max-width: 100px;
+      }
+    }
