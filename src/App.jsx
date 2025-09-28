@@ -5,6 +5,8 @@ import Login from './pages/Login/Login'
 import Landing from './pages/Landing/Landing'
 import Layout from './components/layout/Layout'
 import CreateCustomer from './pages/CreateCustomer/CreateCustomer'
+import FindCustomer from './pages/FindCustomer/FindCustomer'
+
 
 
 
@@ -30,6 +32,14 @@ function App() {
           element={
             <Layout>
               <CreateCustomer />
+            </Layout>
+          }
+        />
+        <Route
+          path='/findCustomer'
+          element={
+            <Layout>
+              <FindCustomer />
             </Layout>
           }
         />
