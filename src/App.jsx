@@ -6,6 +6,8 @@ import Landing from './pages/Landing/Landing'
 import Layout from './components/layout/Layout'
 import CreateCustomer from './pages/CreateCustomer/CreateCustomer'
 import FindCustomer from './pages/FindCustomer/FindCustomer'
+import InfoCustomer from './pages/InfoCustomer/InfoCustomer'
+
 
 
 
@@ -42,6 +44,14 @@ function App() {
               <FindCustomer />
             </Layout>
           }
+        />
+        <Route 
+        path='/infoCustomer'
+        element={
+          <Layout>
+            <InfoCustomer />
+          </Layout>
+        }
         />
 
       </Routes>
