@@ -8,6 +8,8 @@ import CreateCustomer from './pages/CreateCustomer/CreateCustomer'
 import FindCustomer from './pages/FindCustomer/FindCustomer'
 import InfoCustomer from './pages/InfoCustomer/InfoCustomer'
 import CreateInvoice from './pages/CreateInvoice/CreateInvoice'
+import InfoInvoice from './pages/InfoInvoice/InfoInvoice'
+
 
 
 
@@ -46,24 +48,29 @@ function App() {
             </Layout>
           }
         />
-        <Route 
-        path='/infoCustomer'
-        element={
-          <Layout>
-            <InfoCustomer />
-          </Layout>
-        }
+        <Route
+          path='/infoCustomer'
+          element={
+            <Layout>
+              <InfoCustomer />
+            </Layout>
+          }
         />
         <Route
-        path='/createInvoice'
-        element={
-          <Layout>
-            <CreateInvoice />
-          </Layout>
-
-        }
-        
-        
+          path='/createInvoice'
+          element={
+            <Layout>
+              <CreateInvoice />
+            </Layout>
+          }
+        />
+        <Route
+          path='/infoInvoice'
+          element={
+            <Layout>
+              <InfoInvoice />
+            </Layout>
+          }
         />
 
       </Routes>
