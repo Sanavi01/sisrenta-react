@@ -17,3 +17,27 @@ html, body, #root{
   justify-content: center;
   margin-bottom: 10px;  
 }
+
+.right-side {
+    background-color: white;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+#menu-container.collapsing {
+    transition: none !important;
+    height: auto !important;
+}
+
+
+.top-menu {
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-content{
+  height: min-content;
+}

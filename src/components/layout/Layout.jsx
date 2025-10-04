@@ -3,15 +3,15 @@ import Footer from './Footer/Footer'
 
 function Layout({ children }) {
     return (
-        <div className='wrapper' style={{ height: "100%" }}>
-            <div className="row flex-nowrap gx-0 " style={{ height: "100%" }} >
+        <div className='wrapper'>
+            <div className="row flex-nowrap gx-0 " style={{ minHeight: "100vh" }} >
                 <div
                     id="menu-container"
                     className="col-1 collapsed show sidebar"
-                    style={{ minWidth: "120px", height: "100%" }}>
+                    style={{ minWidth: "120px",  minHeight: "100vh" }}>
                     <Menu />
                 </div>
-                <div className="col" style={{ height: "100%" }}>
+                <div className="col" style={{ minHeight: "100vh" }}>
                     <main>{children} </main>
                 </div>
 

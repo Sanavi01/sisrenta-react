@@ -7,6 +7,7 @@ import Layout from './components/layout/Layout'
 import CreateCustomer from './pages/CreateCustomer/CreateCustomer'
 import FindCustomer from './pages/FindCustomer/FindCustomer'
 import InfoCustomer from './pages/InfoCustomer/InfoCustomer'
+import CreateInvoice from './pages/CreateInvoice/CreateInvoice'
 
 
 
@@ -52,6 +53,17 @@ function App() {
             <InfoCustomer />
           </Layout>
         }
+        />
+        <Route
+        path='/createInvoice'
+        element={
+          <Layout>
+            <CreateInvoice />
+          </Layout>
+
+        }
+        
+        
         />
 
       </Routes>
