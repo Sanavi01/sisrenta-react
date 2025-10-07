@@ -1,5 +1,6 @@
 import React from 'react'
 import './Menu.css'
+import { Link } from 'react-router-dom'
 
 
 function Menu() {
@@ -20,10 +21,10 @@ function Menu() {
             </button>
             {/* Collapsed List */}
             <ul className="collapse " id="customersMenu">
-              <li><a href="../pages/CrearCliente.html" className="link-body-emphasis d-inline-flex text-decoration-none rounded mb-1">Crear
-                Cliente</a></li>
-              <li><a href="../pages/BuscarCliente.html" className="link-body-emphasis d-inline-flex text-decoration-none rounded mb-1">Buscar
-                Cliente</a></li>
+              <li><Link to={"/createCustomer"} className="link-body-emphasis d-inline-flex text-decoration-none rounded mb-1">Crear
+                Cliente</Link></li>
+              <li><Link to={"/findCustomer"} className="link-body-emphasis d-inline-flex text-decoration-none rounded mb-1">Buscar
+                Cliente</Link></li>
             </ul>
           </li>
 
@@ -41,10 +42,12 @@ function Menu() {
               Alertas
             </button>
             <ul className="collapse" id="alertCollapsed">
-              <li><a href="../pages/AlertasPreparacion.jsp" className="link-body-emphasis d-inline-flex text-decoration-none rounded mb-1">Alertas
-                de Preparacion</a></li>
-              <li><a href="../pages/AlertaDevolucion.jsp" className="link-body-emphasis d-inline-flex text-decoration-none rounded mb-1">Alertas
-                de Devolucion</a></li>
+              <li><Link to={"/preparationInvoices"} className="link-body-emphasis d-inline-flex text-decoration-none rounded mb-1">Alertas
+                de Preparacion</Link></li>
+              <li><Link to={"/deliveryInvoices"} className="link-body-emphasis d-inline-flex text-decoration-none rounded mb-1">Alertas
+                de Entrega</Link></li>
+              <li><Link to={"/returnInvoices"} className="link-body-emphasis d-inline-flex text-decoration-none rounded mb-1">Alertas
+                de Devolucion</Link></li>
             </ul>
           </li>
         </ul>

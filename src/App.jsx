@@ -9,12 +9,9 @@ import FindCustomer from './pages/FindCustomer/FindCustomer'
 import InfoCustomer from './pages/InfoCustomer/InfoCustomer'
 import CreateInvoice from './pages/CreateInvoice/CreateInvoice'
 import InfoInvoice from './pages/InfoInvoice/InfoInvoice'
-
-
-
-
-
-
+import PreparationInvoice from './pages/NotificationSystem/PreparationInvoice'
+import DeliveryInvoice from './pages/NotificationSystem/DeliveryInvoice'
+import ReturnInvoices from './pages/NotificationSystem/ReturnInvoices'
 
 function App() {
   return (
@@ -72,7 +69,30 @@ function App() {
             </Layout>
           }
         />
-
+        <Route
+          path='/preparationInvoices'
+          element={
+            <Layout>
+              <PreparationInvoice />
+            </Layout>
+          }
+        />
+        <Route
+          path='/deliveryInvoices'
+          element={
+            <Layout>
+              <DeliveryInvoice />
+            </Layout>
+          }
+        />
+        <Route
+          path='/returnInvoices'
+          element={
+            <Layout>
+              <ReturnInvoices />
+            </Layout>
+          }
+        />
       </Routes>
     </BrowserRouter>
   )
